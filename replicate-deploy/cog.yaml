@@ -1,0 +1,14 @@
+# Configuration for Cog
+# Reference: https://cog.run/yaml
+
+build:
+  gpu: false
+  python_version: "3.11"
+  python_packages:
+    - "edge-tts==6.1.12"
+    - "httpx==0.28.1"
+    - "Pillow==11.2.1"
+  system_packages:
+    - "ffmpeg"
+
+predict: "predict.py:Predictor"
